@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #84a403;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MVC.SwitchController">
+   <children>
+      <Text layoutX="174.0" layoutY="58.0" opacity="0.37" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Verdana;" text="Level Select" wrappingWidth="303.13671875">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Text>
+      <Text layoutX="178.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Verdana;" text="Level Select" wrappingWidth="303.13671875">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Text>
+      <Button layoutX="96.0" layoutY="157.0" mnemonicParsing="false" onAction="#ChangeLevelLeft" prefHeight="25.0" prefWidth="92.0" style="-fx-background-radius: 20px; -fx-background-color: #DEDF7D; -fx-border-color: black; -fx-border-radius: 20px; -fx-border-width: 2px;" text="Left" />
+      <Button layoutX="445.0" layoutY="157.0" mnemonicParsing="false" onAction="#ChangeLevelRight" prefHeight="25.0" prefWidth="92.0" style="-fx-background-radius: 20px; -fx-background-color: #DEDF7D; -fx-border-color: black; -fx-border-radius: 20px; -fx-border-width: 2px;" text="Right" />
+      <Button layoutX="270.0" layoutY="286.0" mnemonicParsing="false" onAction="#SetLevel" prefHeight="25.0" prefWidth="92.0" style="-fx-background-radius: 20px; -fx-background-color: #DEDF7D; -fx-border-color: black; -fx-border-radius: 20px; -fx-border-width: 2px;" text="Select" />
+      <ImageView fx:id="m_theme_backward" fitHeight="150.0" fitWidth="217.0" layoutX="211.0" layoutY="99.0" opacity="0.29" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../UI/UI-background.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="270.0" layoutY="327.0" mnemonicParsing="false" onAction="#SwitchToMenu" prefHeight="25.0" prefWidth="92.0" style="-fx-background-radius: 20px; -fx-background-color: #DEDF7D; -fx-border-color: black; -fx-border-radius: 20px; -fx-border-width: 2px;" text="Back" />
+      <ImageView fitHeight="100.0" fitWidth="98.0" layoutX="47.0" layoutY="214.0">
+         <image>
+            <Image url="@../UI/vecteezy_speech-bubble_1195458.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="133.0" fitWidth="107.0" layoutX="6.0" layoutY="264.0">
+         <image>
+            <Image url="@../UI/di4op546T.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="m_Theme_Info" layoutX="67.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Verdana;" text="Select a Level" wrappingWidth="92.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="m_Level_Preview" fitHeight="174.0" fitWidth="247.0" layoutX="196.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../LevelPreviews/Level1.png" />
+         </image></ImageView>
+      <CheckBox fx:id="m_Dasher" layoutX="462.0" layoutY="333.0" mnemonicParsing="false" text="Dasher" />
+      <CheckBox fx:id="m_Enemy_Attack" layoutX="462.0" layoutY="363.0" mnemonicParsing="false" text="Enemy Attack" />
+      <Text layoutX="408.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Verdana;" text="Game additions" wrappingWidth="183.13671875">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

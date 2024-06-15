@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #84A403;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MVC.SwitchController">
+   <children>
+      <ImageView fitHeight="109.0" fitWidth="106.0" layoutX="498.0" layoutY="175.0">
+         <image>
+            <Image url="@../UI/vecteezy_speech-bubble_1195458.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="138.0" fitWidth="120.0" layoutX="46.0" layoutY="142.0">
+         <image>
+            <Image url="@../UI/vecteezy_speech-bubble_1195458.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="189.0" fitWidth="203.0" layoutX="402.0" layoutY="211.0">
+         <image>
+            <Image url="@../UI/HSSnake.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="164.0" fitWidth="136.0" layoutY="236.0">
+         <image>
+            <Image url="@../UI/di4op546T.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="14.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Verdana;" text="Enter your name" wrappingWidth="590.13671875">
+         <font>
+            <Font size="66.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="74.0" opacity="0.37" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Verdana;" text="Enter your name" wrappingWidth="558.13671875">
+         <font>
+            <Font size="66.0" />
+         </font>
+      </Text>
+      <Text fx:id="m_HS_info" layoutX="78.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your name for a chance to be on the leaderboard!" wrappingWidth="80.62109375" />
+      <Text layoutX="511.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You did great!" wrappingWidth="80.62109375" />
+      <TextField fx:id="m_USER_NAME" layoutX="228.0" layoutY="217.0" promptText="Your name here" />
+      <Button layoutX="247.0" layoutY="270.0" mnemonicParsing="false" onAction="#EndScore" prefHeight="25.0" prefWidth="92.0" style="-fx-background-radius: 20px; -fx-background-color: #DEDF7D; -fx-border-color: black; -fx-border-radius: 20px; -fx-border-width: 2px;" text="Submit" />
+   </children>
+</AnchorPane>

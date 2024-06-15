@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="m_game_anchor" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #343434;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MVC.SwitchController">
+   <children>
+      <ImageView fx:id="m_game_background" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Themes/Theme3.png" />
+         </image>
+      </ImageView>
+      <Canvas fx:id="m_game_canvas" height="400.0" width="600.0" />
+      <Text fx:id="m_score_text" fill="#00ae29" layoutX="15.0" layoutY="40.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="2.0" text="Score:" wrappingWidth="143.13671875">
+         <font>
+            <Font name="Noto Kufi Arabic" size="22.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="m_snake_Head" fitHeight="25.0" fitWidth="37.0" layoutX="105.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Snake/snake-head-right.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="m_game_OVER" layoutX="184.0" layoutY="-103.0" stroke="WHITE" strokeType="OUTSIDE" text="GAME OVER" wrappingWidth="289.13671875">
+         <font>
+            <Font name="Lucida Sans Unicode" size="37.0" />
+         </font>
+      </Text>
+      <Button fx:id="m_end_Button" layoutX="-119.0" layoutY="225.0" mnemonicParsing="false" onAction="#SwitchToEnd" prefHeight="25.0" prefWidth="92.0" style="-fx-background-radius: 20px; -fx-background-color: #DEDF7D; -fx-border-color: black; -fx-border-radius: 20px; -fx-border-width: 2px;" text="Continue" />
+   </children>
+</AnchorPane>
